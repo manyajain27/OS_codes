@@ -36,7 +36,7 @@ int main() {
     printf("\nSequence of head movements:\n");
     for(i = 0; i < n; i++) {
         printf("From %d to %d\n", current_position, requests[i]);
-        total_movement += abs(requests[i] - current_position);
+        total_movement += abs(requests[i] - current_position); //mod operator
         current_position = requests[i];
     }
 
